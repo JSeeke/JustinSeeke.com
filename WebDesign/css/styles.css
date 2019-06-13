@@ -1,0 +1,44 @@
+header {
+	height: 50px;
+	background-color: lightgrey;
+}
+
+#navbar {
+	width: fit-content;
+	margin: auto;
+	padding-top: 10px;
+	postition: sticky;
+}
+
+#nav-list {
+	display: inline-flex;
+	list-style: none;
+}
+
+#nav-list li {
+	padding: 0px 20px;
+}
+
+#content {
+	min-height: calc(100vh - 130px);
+}
+
+.cover-section img {
+	object-fit: cover;
+	height: calc(100vh - 130px); 
+	width: 100%;
+	max-width: 1115px;
+	margin: auto;
+}
+
+.cover-section h1 {
+	font-size: 70pt;
+	position: absolute;
+	top: 110px;
+	float: center;
+}
+
+footer {
+	height: 80px;
+	background-color: lightgrey;
+}
