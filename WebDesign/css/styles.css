@@ -1,6 +1,7 @@
+/* HEADER SECTION STYLING */
 header {
 	height: 50px;
-	background-color: lightgrey;
+	background-color: #2a2a2a;
 }
 
 #navbar {
@@ -19,26 +20,126 @@ header {
 	padding: 0px 20px;
 }
 
+#nav-list a {
+	color: white;
+	transition: 0.1s;
+}
+
+/* CONTENT SECTION STYLING */
 #content {
 	min-height: calc(100vh - 130px);
 }
 
-.cover-section img {
-	object-fit: cover;
-	height: calc(100vh - 130px); 
+.cover-section .cover-img{
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
 	width: 100%;
-	max-width: 1115px;
+    max-width: 1045px;
+    max-height: 830px;
+}
+
+.cover-section .cover-img-wide{
+    display: none;
+}
+
+.cover-section .cover-img-very-wide{
+    display: none;
+}
+
+@media (min-width: 1045px) {
+	.cover-section .cover-img{
+	    display: none;
+	}
+	
+	.cover-section .cover-img-wide{
+	    object-fit: cover;
+	    object-position: top;
+	    margin: auto;
+		width: 100%;
+	    max-height: 830px;
+	    display: block;
+	}
+	
+	.cover-section .cover-img-very-wide{
+    	display: none;
+	}
+}
+
+@media (min-width: 1045px) {
+	.cover-section .cover-img{
+	    display: none;
+	}
+	
+	.cover-section .cover-img-wide{
+	    object-fit: cover;
+	    object-position: top;
+	    margin: auto;
+		width: 100%;
+	    max-height: 830px;
+	    display: block;
+	}
+	
+	.cover-section .cover-img-very-wide{
+    	display: none;
+	}
+}
+
+@media (min-width: 1450px) {
+	.cover-section .cover-img{
+	    display: none;
+	}
+	
+	.cover-section .cover-img-wide{
+	    display: none;
+	}
+	
+	.cover-section .cover-img-very-wide{
+    	object-fit: cover;
+	    object-position: center;
+	    margin: auto;
+		width: 100%;
+	    max-height: 830px;
+	    display: block;
+	}
+}
+
+#about-me-wrap {
+	width: 100%;
+	background-color: #2a2a2a;
+	height: 18vh;
+}
+
+#about-me {
+	width: 60%;
 	margin: auto;
+	padding-top: 25px;
+	color: white;
 }
 
-.cover-section h1 {
-	font-size: 70pt;
-	position: absolute;
-	top: 110px;
-	float: center;
-}
-
+/* FOOTER SECTION STYLING */
 footer {
 	height: 80px;
-	background-color: lightgrey;
+	background-color: #2a2a2a;
+}
+
+#social {
+	width: fit-content;
+	margin: 0px auto;
+}
+
+#social-list {
+	display: inline-flex;
+	list-style: none;
+	padding-top: 25px;
+}
+
+#social-list li {
+	padding: 0px 20px;
+}
+
+#social-list i {
+	font-size: 18pt;
+	color: white;
+	transition: 0.1s;
 }
