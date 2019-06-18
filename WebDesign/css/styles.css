@@ -2,13 +2,16 @@
 header {
 	height: 50px;
 	background-color: #2a2a2a;
+	position: sticky;
 }
 
 #navbar {
 	width: fit-content;
 	margin: auto;
 	padding-top: 10px;
-	postition: sticky;
+	position: sticky;
+	top: 0px;
+	left: 0px;
 }
 
 #nav-list {
@@ -30,77 +33,68 @@ header {
 	min-height: calc(100vh - 130px);
 }
 
-.cover-section .cover-img{
+.cover-section {
+	position: fixed;
+	height: 80vh;
+}
+
+/* normal sized cover photo */
+.cover-img{
     object-fit: cover;
     object-position: center;
     margin: auto;
 	width: 100%;
-    max-width: 1045px;
-    max-height: 830px;
+	height: 80vh;
+	position: fixed;
 }
 
-.cover-section .cover-img-wide{
+.cover-img-wide{
     display: none;
 }
 
-.cover-section .cover-img-very-wide{
+.cover-img-very-wide{
     display: none;
 }
 
+/* wide cover photo */
 @media (min-width: 1045px) {
-	.cover-section .cover-img{
+	.cover-img{
 	    display: none;
 	}
 	
-	.cover-section .cover-img-wide{
+	.cover-img-wide{
 	    object-fit: cover;
-	    object-position: top;
+	    object-position: center;
 	    margin: auto;
 		width: 100%;
-	    max-height: 830px;
+		height: 80vh;
 	    display: block;
+	    position: fixed;
 	}
 	
-	.cover-section .cover-img-very-wide{
+	.cover-img-very-wide{
     	display: none;
 	}
 }
 
-@media (min-width: 1045px) {
-	.cover-section .cover-img{
-	    display: none;
-	}
-	
-	.cover-section .cover-img-wide{
-	    object-fit: cover;
-	    object-position: top;
-	    margin: auto;
-		width: 100%;
-	    max-height: 830px;
-	    display: block;
-	}
-	
-	.cover-section .cover-img-very-wide{
-    	display: none;
-	}
-}
-
+/* very wide cover photo */
 @media (min-width: 1450px) {
-	.cover-section .cover-img{
+	.cover-img{
 	    display: none;
 	}
 	
-	.cover-section .cover-img-wide{
+	.cover-img-wide{
 	    display: none;
 	}
 	
-	.cover-section .cover-img-very-wide{
+	.cover-img-very-wide{
     	object-fit: cover;
 	    object-position: center;
 	    margin: auto;
 		width: 100%;
-	    max-height: 830px;
+		height: 80vh;
 	    display: block;
+	    position: fixed;
 	}
 }
 
@@ -115,6 +109,8 @@ header {
 	margin: auto;
 	padding-top: 25px;
 	color: white;
+    position: relative;
+    top: 80vh;
 }
 
 /* FOOTER SECTION STYLING */
