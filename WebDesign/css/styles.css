@@ -24,8 +24,13 @@ header {
 }
 
 #nav-list a {
-	color: white;
-	transition: 0.1s;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+#nav-list a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* CONTENT SECTION STYLING */
@@ -123,18 +128,98 @@ header {
 	}
 }
 
-#about-me-wrap {
+#aboutMe {
 	width: 100%;
+	margin: auto;
+	height: 100vh;
+	color: white;
 	background-color: #2a2a2a;
-	min-height: 20vh;
-    padding-bottom: 5px;
 }
 
-#about-me {
+#aboutMeTitle {
+	display: flex;
+	height: 20vh;
+	background-color: #2a2a2a;
+}
+
+#aboutMeTitle h2{
+	width: fit-content;
+	margin: auto;
+	color: white;
+}
+
+#aboutMeContent {
 	width: 60%;
 	margin: auto;
-	padding-top: 25px;
+}
+
+/* MY STORY CAROUSEL */
+#myStoryCarousel {
+    height: fit-content;
+    background-color: #2a2a2a;
+}
+
+#carouselTitle {
+	width: 100%;
+	margin: auto;
 	color: white;
+	background-color: #242424;
+    height: 10vh;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#carouselTitle h1{
+	width: fit-content;
+	margin: auto;
+}
+
+.carousel-inner {
+	background-color: #2a2a2a;
+    height: 80vh;
+    display: flex;
+}
+
+.carousel-item {
+	padding: 25vh 0px;
+    height: 100%;
+	color: white;
+	width: 100%;
+	margin: auto;
+	float: none;
+	background-size: cover;
+}
+
+.carousel-item .carouselBanner {
+	background-color: rgba(42, 42, 42, 0.5);
+	padding: 20px 0px;
+}
+
+.carousel-item .carouselBannerContent {
+	width: 60%;
+	margin: auto;
+}
+
+#slide1 {
+	background-image: url("../images/ProducePro.jpg");
+}
+
+#slide2 {
+	background-image: url("../images/Purdue.jpg");
+}
+
+#slide3 {
+	background-image: url("../images/Cedarburg.jpg");
+}
+
+.carousel-indicators {
+	bottom: 11vh;
+}
+
+.myStoryFooter {
+	height: 10vh;
+	background-color: #242424;
 }
 
 /* FOOTER SECTION STYLING */
