@@ -8,12 +8,12 @@ header {
 	background-color: #2a2a2a;
 	position: sticky;
 	top: 0px;
+	display: flex;
 }
 
 #navbar {
 	width: fit-content;
 	margin: auto;
-	padding-top: 10px;
 }
 
 #navList {
@@ -21,10 +21,6 @@ header {
 	list-style: none;
     margin: auto;
     padding: 0;
-}
-
-#navList li {
-	padding: 0px 20px;
 }
 
 #navList button {
@@ -47,101 +43,39 @@ header {
 #content {
 	scroll-behavior: smooth;
 	position: relative;
-    top: 75vh;
+    top: 80vh;
 }
 
 .coverSection {
 	position: fixed;
-	height: 75vh;
+	height: 80vh;
 }
 
 /* normal sized cover photo */
-.coverImg{
-    object-fit: cover;
+.coverImgNarrow {
+	object-fit: cover;
     object-position: center;
     margin: auto;
 	width: 100%;
-	height: 75vh;
+	height: 80vh;
 	position: fixed;
 }
 
-.coverImgWide{
+.coverImg {
+	display: none;
+}
+
+.coverImgWide {
     display: none;
 }
 
-.coverImgVeryWide{
+.coverImgVeryWide {
     display: none;
-}
-
-/* mobile screens */
-@media (max-width: 375px) {
-	body {
-		font-size: 0.9rem;
-	}
-	/* iphone X height */
-	@media (max-height: 812px) {
-		.coverImg{
-		    max-height: 500px;
-		}
-		
-		#content {
-			top: 61vh;
-		}
-	}
-	
-	/* iphone 5/SE/6/7/8 */
-	@media (max-height: 667px) {
-		#content {
-			top: 72vh;
-		}
-	}
-}
-
-/* wide cover photo */
-@media (min-width: 1045px) {
-	.coverImg{
-	    display: none;
-	}
-	
-	.coverImgWide{
-	    object-fit: cover;
-	    object-position: center;
-	    margin: auto;
-		width: 100%;
-		height: 75vh;
-	    display: block;
-	    position: fixed;
-	}
-	
-	.coverImgVeryWide{
-    	display: none;
-	}
-}
-
-/* very wide cover photo */
-@media (min-width: 1450px) {
-	.coverImg{
-	    display: none;
-	}
-	
-	.coverImgWide{
-	    display: none;
-	}
-	
-	.coverImgVeryWide{
-    	object-fit: cover;
-	    object-position: center;
-	    margin: auto;
-		width: 100%;
-		height: 75vh;
-	    display: block;
-	    position: fixed;
-	}
 }
 
 #greetingSection {
 	display: flex;
-	height: 20vh;
+	height: 15vh;
 	background-color: #2a2a2a;
 	width: 100%;
 }
@@ -160,21 +94,60 @@ header {
 	color: white;
 }
 
+.aboutMeContent {
+	display: grid;
+	width: 100%;
+}
+
+.aboutMeContent .bio {
+	width: 100%;
+	margin: auto;
+    padding-top: 5vh;
+}
+
+.aboutMeContent .bio p {
+	max-height: : 30vh;
+	padding: 5px 0px;
+}
+
+.aboutMeContent img {
+	margin: auto;
+	height: 30vh;
+    object-fit: contain;
+}
+
 .sectionHeading {
 	display: flex;
 	height: 20vh;
 }
 
-.sectionHeading h2{
+.sectionHeading h1 {
 	width: fit-content;
 	margin: auto;
 	color: white;
+}
+
+#myStory .sectionHeading {
+	height: 14vh;
 }
 
 .sectionContent {
 	height: 80vh;
 	width: 60%;
 	margin: auto;
+	color: white;
+}
+
+.sectionContent p {
+	text-align: justify;
+    max-width: 700px;
+    margin: auto;
+}
+
+.sectionContent h2 {
+	width: fit-content;
+	margin: auto;
+	padding-bottom: 9px;
 }
 
 /* MY STORY CAROUSEL */
@@ -193,9 +166,9 @@ header {
     font-weight: bold;
 }
 
-.myStoryCarousel {
+.carousel {
     display: flex;
-    height: 60vh;
+    height: 80vh;
 }
 
 .carousel-item {
@@ -204,7 +177,10 @@ header {
 	width: 100%;
 	margin: auto;
 	float: none;
-	background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+	background-color: #282828;
 }
 
 .carousel-item .carouselBanner {
@@ -216,6 +192,20 @@ header {
 .carousel-item .carouselBannerContent {
 	width: 60%;
 	margin: auto;
+    margin-bottom: 5vh;
+}
+
+.carousel-item .carouselBannerContent p {
+	text-align: justify;
+	max-width: 700px;
+    margin: auto;
+    padding-bottom: 12vh;
+}
+
+.carousel-item .carouselBannerContent h2 {
+	width: fit-content;
+	margin: auto;
+	padding-bottom: 9px;
 }
 
 #slide1 {
@@ -227,20 +217,35 @@ header {
 }
 
 #slide3 {
-	background-image: url("../images/Cedarburg.jpg");
-}
-
-.carousel-indicators {
-	bottom: 130vh;
+	background-image: url("../images/Cedarburg2.jpg");
 }
 
 .myStoryFooter {
-	height: 20vh;
+	height: 6vh;
     background-color: #2a2a2a;
 }
 
 #myProjects {
 	background-color: #242424;
+}
+
+#myProjects .sectionContent {
+	height: fit-content;
+	min-height: 80vh;
+}
+
+.projectList {
+	list-style: none;
+}
+
+.projectSection {
+	padding-bottom: 8vh;
+}
+
+.projectContent h2 {
+	width: fit-content;
+	margin: auto;
+	padding-bottom: 12px;
 }
 
 /* FOOTER SECTION STYLING */
@@ -270,4 +275,173 @@ footer {
 	font-size: 18pt;
 	color: white;
 	transition: 0.1s;
+}
+
+/* mobile screens */
+@media (max-width: 375px) {
+	.coverImgWideNarrow {
+	    object-fit: cover;
+	    object-position: center;
+	    margin: auto;
+		width: 100%;
+		height: 80vh;
+	    display: block;
+	    position: fixed;
+	}
+
+	.coverImg {
+	    display: none;
+	}
+	
+	.coverImgWide {
+	    display: none;
+	}
+	
+	.coverImgVeryWide {
+    	display: none;
+	}
+
+	body {
+		font-size: small;
+	}
+
+	#navList li {
+		padding: 0px 5px;
+	}
+
+	.sectionContent {
+		width: 80%;
+	}
+
+	.aboutMeContent .bio {
+		width: 100%;
+	}
+
+	.aboutMeContent img {
+		display: none;
+	}
+
+	.carousel-item {
+		background-size: cover;
+	}
+
+	#slide1 {
+    	background-position-x: -100px;
+	}
+
+	#slide3 {
+	    background-position-x: -450px;
+	}
+}
+
+@media (max-width: 550px) {
+	body {
+		font-size: medium;
+	}
+
+	#navList li {
+		padding: 0px 20px;
+	}
+
+	.sectionContent {
+		width: 80%;
+	}
+
+	.aboutMeContent .bio {
+		width: 100%;
+	}
+
+	.aboutMeContent img {
+		display: none;
+	}
+
+	.carousel-item {
+		background-size: cover;
+	}
+
+	#slide1 {
+    	background-position-x: -100px;
+	}
+
+	#slide3 {
+	    background-position-x: -450px;
+	}
+}
+
+@media (min-width: 550px) {
+	.coverImgWideNarrow {
+	    display: none;
+	}
+
+	.coverImg {
+	    object-fit: cover;
+	    object-position: center;
+	    margin: auto;
+		width: 100%;
+		height: 80vh;
+	    display: block;
+	    position: fixed;
+	}
+	
+	.coverImgWide {
+	    display: none;
+	}
+	
+	.coverImgVeryWide {
+    	display: none;
+	}
+}
+
+/* wide cover photo */
+@media (min-width: 1045px) {
+	.coverImgNarrow {
+		display: none;
+	}
+
+	.coverImg {
+	    display: none;
+	}
+	
+	.coverImgWide {
+	    object-fit: cover;
+	    object-position: center;
+	    margin: auto;
+		width: 100%;
+		height: 80vh;
+	    display: block;
+	    position: fixed;
+	}
+	
+	.coverImgVeryWide {
+    	display: none;
+	}
+
+	.carousel-item {
+		background-size: contain;
+	}
+}
+
+/* very wide cover photo */
+@media (min-width: 1450px) {
+	.coverImgNarrow {
+		display: none;
+	}
+
+	.coverImg {
+	    display: none;
+	}
+	
+	.coverImgWide {
+	    display: none;
+	}
+	
+	.coverImgVeryWide {
+    	object-fit: cover;
+	    object-position: center;
+	    margin: auto;
+		width: 100%;
+		height: 80vh;
+	    display: block;
+	    position: fixed;
+	}
 }
