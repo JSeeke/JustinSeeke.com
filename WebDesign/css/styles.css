@@ -39,6 +39,10 @@ header {
 	outline: none;
 }
 
+#navList li {
+	margin: 0px 50px;
+}
+
 /* CONTENT SECTION STYLING */
 #content {
 	scroll-behavior: smooth;
@@ -53,12 +57,7 @@ header {
 
 /* normal sized cover photo */
 .coverImgNarrow {
-	object-fit: cover;
-    object-position: center;
-    margin: auto;
-	width: 100%;
-	height: 80vh;
-	position: fixed;
+	display: none;
 }
 
 .coverImg {
@@ -70,7 +69,13 @@ header {
 }
 
 .coverImgVeryWide {
-    display: none;
+	object-fit: cover;
+    object-position: center;
+    margin: auto;
+	width: 100%;
+	height: 80vh;
+    display: block;
+    position: fixed;
 }
 
 #greetingSection {
@@ -84,6 +89,7 @@ header {
 	width: fit-content;
 	margin: auto;
 	color: white;
+	font-size: 50pt;
 }
 
 #aboutMe {
@@ -121,6 +127,15 @@ header {
 	height: 20vh;
 }
 
+.sectionHeading-dark {
+	background-color: #222222;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+}
+
 .sectionHeading h1 {
 	width: fit-content;
 	margin: auto;
@@ -133,7 +148,8 @@ header {
 
 .sectionContent {
 	height: 80vh;
-	width: 60%;
+	width: 100%;
+	max-width: 1000px;
 	margin: auto;
 	color: white;
 }
@@ -217,7 +233,7 @@ header {
 }
 
 #slide3 {
-	background-image: url("../images/Cedarburg2.jpg");
+	background-image: url("../images/Cedarburg2.jpg"); 
 }
 
 .myStoryFooter {
@@ -236,10 +252,15 @@ header {
 
 .projectList {
 	list-style: none;
+	padding: 0px;
 }
 
 .projectSection {
 	padding-bottom: 8vh;
+}
+
+.projectSection h2 {
+	text-align: center;
 }
 
 .projectContent h2 {
@@ -278,122 +299,7 @@ footer {
 }
 
 /* mobile screens */
-@media (max-width: 375px) {
-	.coverImgWideNarrow {
-	    object-fit: cover;
-	    object-position: center;
-	    margin: auto;
-		width: 100%;
-		height: 80vh;
-	    display: block;
-	    position: fixed;
-	}
-
-	.coverImg {
-	    display: none;
-	}
-	
-	.coverImgWide {
-	    display: none;
-	}
-	
-	.coverImgVeryWide {
-    	display: none;
-	}
-
-	body {
-		font-size: small;
-	}
-
-	#navList li {
-		padding: 0px 5px;
-	}
-
-	.sectionContent {
-		width: 80%;
-	}
-
-	.aboutMeContent .bio {
-		width: 100%;
-	}
-
-	.aboutMeContent img {
-		display: none;
-	}
-
-	.carousel-item {
-		background-size: cover;
-	}
-
-	#slide1 {
-    	background-position-x: -100px;
-	}
-
-	#slide3 {
-	    background-position-x: -450px;
-	}
-}
-
-@media (max-width: 550px) {
-	body {
-		font-size: medium;
-	}
-
-	#navList li {
-		padding: 0px 20px;
-	}
-
-	.sectionContent {
-		width: 80%;
-	}
-
-	.aboutMeContent .bio {
-		width: 100%;
-	}
-
-	.aboutMeContent img {
-		display: none;
-	}
-
-	.carousel-item {
-		background-size: cover;
-	}
-
-	#slide1 {
-    	background-position-x: -100px;
-	}
-
-	#slide3 {
-	    background-position-x: -450px;
-	}
-}
-
-@media (min-width: 550px) {
-	.coverImgWideNarrow {
-	    display: none;
-	}
-
-	.coverImg {
-	    object-fit: cover;
-	    object-position: center;
-	    margin: auto;
-		width: 100%;
-		height: 80vh;
-	    display: block;
-	    position: fixed;
-	}
-	
-	.coverImgWide {
-	    display: none;
-	}
-	
-	.coverImgVeryWide {
-    	display: none;
-	}
-}
-
-/* wide cover photo */
-@media (min-width: 1045px) {
+@media (max-width: 1450px) {
 	.coverImgNarrow {
 		display: none;
 	}
@@ -410,6 +316,30 @@ footer {
 		height: 80vh;
 	    display: block;
 	    position: fixed;
+	}
+	
+	.coverImgVeryWide {
+    	display: none;
+	}
+}
+
+@media (max-width: 1045px) {
+	.coverImgNarrow {
+		display: none;
+	}
+
+	.coverImg {
+	   	object-fit: cover;
+	    object-position: center;
+	    margin: auto;
+		width: 100%;
+		height: 80vh;
+	    display: block;
+	    position: fixed;
+	}
+	
+	.coverImgWide {
+		display: none;
 	}
 	
 	.coverImgVeryWide {
@@ -421,10 +351,25 @@ footer {
 	}
 }
 
-/* very wide cover photo */
-@media (min-width: 1450px) {
+@media (max-width: 850px) {
+	#navList li {
+		margin: 0px 5px;
+	}
+}
+
+@media (max-width: 550px) {
+	body {
+		font-size: medium;
+	}
+
 	.coverImgNarrow {
-		display: none;
+	    object-fit: cover;
+	    object-position: center;
+	    margin: auto;
+		width: 100%;
+		height: 80vh;
+	    display: block;
+	    position: fixed;
 	}
 
 	.coverImg {
@@ -436,12 +381,70 @@ footer {
 	}
 	
 	.coverImgVeryWide {
-    	object-fit: cover;
-	    object-position: center;
-	    margin: auto;
+    	display: none;
+	}
+
+	#greetingSection h1 {
+		font-size: 2.5rem;
+	}
+
+	.sectionContent {
+		width: 80%;
+	}
+
+	.aboutMeContent .bio {
 		width: 100%;
-		height: 80vh;
-	    display: block;
-	    position: fixed;
+	}
+
+	.carousel-item {
+		background-size: cover;
+	}
+
+	.carousel-item .carouselBannerContent {
+	    width: 75%;
+	    line-height: normal;
+	    font-size: 11pt;
+	}
+
+	.carousel-control-prev-icon {
+		margin-right: 5px;
+	}
+
+	.carousel-control-next-icon {
+		margin-left: 5px;
+	}
+
+	#slide1 {
+    	background-position-x: -100px;
+	}
+
+	#slide3 {
+	    background-position-x: -388px;
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		font-size: 11pt;
+	}
+
+	.sectionContent {
+		width: 80%;
+	}
+
+	.aboutMeContent .bio {
+		width: 100%;
+	}
+
+	.carousel-item {
+		background-size: cover;
+	}
+
+	#slide1 {
+    	background-position-x: -100px;
+	}
+
+	#slide3 {
+	    background-position-x: -450px;
 	}
 }

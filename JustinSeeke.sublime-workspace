@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"x",
+				"x-small\tfont-size"
+			],
+			[
+				"padding",
+				"padding-bottom\tproperty"
+			],
+			[
 				"font",
 				"font-weight\tproperty"
 			],
@@ -18,10 +30,6 @@
 			[
 				"sect",
 				"sectionHeading"
-			],
-			[
-				"padding",
-				"padding-top\tproperty"
 			],
 			[
 				"back",
@@ -155,7 +163,7 @@
 			"file": "WebDesign/html/homepage.html",
 			"settings":
 			{
-				"buffer_size": 6881,
+				"buffer_size": 8200,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -164,7 +172,7 @@
 			"file": "WebDesign/css/styles.css",
 			"settings":
 			{
-				"buffer_size": 3846,
+				"buffer_size": 5981,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -344,6 +352,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#navlist li",
+			"font-size",
+			"carouselBannerContent",
+			"max-width",
+			"sectionContent",
+			"sectionHeading",
 			"data-slide",
 			"sectionHeading",
 			"3",
@@ -405,26 +419,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6881,
+						"buffer_size": 8200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1525,
-								1525
+								0,
+								8200
 							]
 						],
 						"settings":
 						{
+							"spell_check": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -439,27 +454,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3846,
+						"buffer_size": 5981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3155,
-								3155
+								0,
+								5981
 							]
 						],
 						"settings":
 						{
+							"spell_check": true,
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2748.0,
+						"translation.y": 4480.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -475,8 +491,8 @@
 						"selection":
 						[
 							[
-								164,
-								164
+								0,
+								469
 							]
 						],
 						"settings":
@@ -496,7 +512,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -540,7 +556,7 @@
 	"project": "JustinSeeke.com",
 	"replace":
 	{
-		"height": 42.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -570,7 +586,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
