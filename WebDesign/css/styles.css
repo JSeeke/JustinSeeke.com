@@ -23,7 +23,7 @@ header {
     padding: 0;
 }
 
-#navList button {
+#navList a {
 	background-color: transparent;
 	border: 0;
     color: #ccc;
@@ -31,11 +31,12 @@ header {
     width: 100px;
 }
 
-#navList button:hover {
+#navList a:hover {
     color: #fff;
+    text-decoration: none;
 }
 
-#navList button:focus {
+#navList a:focus {
 	outline: none;
 }
 

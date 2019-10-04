@@ -1,24 +1,28 @@
-function scrollToSection(section) {
-	var height = $(window).height();
-	switch (section) {
-		case "aboutMe":
-			for (i=0; i<height; i++) {
-				window.scrollTo(0, i);
-			}
-			break;
-		case "myStory":
-			height *= 2;
-			for (i=0; i<height; i++) {
-				window.scrollTo(0, i);
-				setTimeout(function() {}, 10);
-			}
-			break;
-		case "myProjects":
-			height *= 3;
-			for (i=0; i<height; i++) {
-				window.scrollTo(0, i);
-				setTimeout(function() {}, 10);
-			}
-			break;
-	}
-}
+// Smooth scrolling for only header links
+var smoothScrollTargets = ["#aboutMe", "#myStory", "#myProjects"];
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (smoothScrollTargets.indexOf(this.hash) > -1) {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 
+      800, 
+      function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
