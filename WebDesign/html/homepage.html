@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Font Awesome Kit -->
 	<script src="https://kit.fontawesome.com/1786b6e45c.js"></script>
 	
-    <!-- Bootstrap CSS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JQuery -->
+    <script src="../javascript/jquery-3.4.1.min.js"></script>
+	<!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all">
@@ -24,9 +29,10 @@
 	<header>
 		<div id="navbar">
 			<ul id="navList">
-				<li><button onclick='scrollToSection("aboutMe");'>About Me</li>
-				<li><button onclick='scrollToSection("myStory");'>My Story</li>
-				<li><button onclick='scrollToSection("myProjects");'>Projects</li>
+				<!-- maybe lock these in place to fix safari overscrolling -->
+				<li><a href=#aboutMe>About Me</a></li>
+				<li><a href=#myStory>My Story</a></li>
+				<li><a href=#myProjects>Projects</a></li>
 			</ul>
 		</div>
 	</header>
@@ -125,8 +131,10 @@
 						<p>The idea of having a personal website was always appealing to me. This project was the first time that I had taken the time to work on a project on my own. I decided to build this website to apply the web development skills that I learned through my work to a personal project. All of the styling for this website was written and designed by me. </p>
 					</li>
 					<li class="projectSection">
-						<h2>Dynamic QR Code Webapps (in the works)</h2>
-						<p>I was looking into a QR code for my website, when I stumbled across dynamic QR code technology. This seemed like a good chance to build two basic web applications to learn two new web development technologies, React and Angular. The idea is to have a QR code that directs to the programmable redirect url. Using some not so fancy PHP and some and beginner web framework code, I'm going to build a convenient way to update the final destination for a dynamic QR code.</p>
+						<a href="../?QRapp">
+							<h2>Dynamic QR Code Webapps (in the works)</h2>
+							<p>I was looking into a QR code for my website, when I stumbled across dynamic QR code technology. The idea is to have a QR code that directs to the programmable target url. This has been my first real exposure to ground up web application design with php. The most exciting part of this project was designing and organizing the request logic for altering the backend state of the application. I plan on eventually rebuilding the app in React and Angular as a way to introduce myself to more modern web development.</p>
+						</a>
 					<li>
 				</ul>
 			</div>
@@ -137,26 +145,20 @@
 			<div id="social">
 				<ul id="socialList">
 					<li>
-						<a href="mailto: jjseeke@gmail.com"><i class="far fa-envelope"></a></i>
+						<a href="mailto: jjseeke@gmail.com"><i class="far fa-envelope"></i></a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/justinseeke"><i class="fab fa-linkedin"></a></i>
+						<a href="https://www.linkedin.com/in/justinseeke"><i class="fab fa-linkedin"></i></a>
 					</li>
 					<li>
-						<a href="https://github.com/JSeeke"><i class="fab fa-github"></a></i>
+						<a href="https://github.com/JSeeke"><i class="fab fa-github"></i></a>
 					</li>
 					<li>
-						<a href="https://www.twitch.tv/captnkorea"><i class="fab fa-twitch"></a></i>
+						<a href="https://www.twitch.tv/captnkorea"><i class="fab fa-twitch"></i></a>
 					</li>
 				</ul>
 			</div>
 		</footer>
 	</div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

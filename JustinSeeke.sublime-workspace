@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"saved",
+				"savedDestinations"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
 				"fon",
 				"font-size\tproperty"
 			],
@@ -14,10 +22,6 @@
 			[
 				"padding",
 				"padding-bottom\tproperty"
-			],
-			[
-				"font",
-				"font-weight\tproperty"
 			],
 			[
 				"text",
@@ -159,33 +163,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "WebDesign/html/homepage.html",
-			"settings":
-			{
-				"buffer_size": 8200,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "WebDesign/css/styles.css",
-			"settings":
-			{
-				"buffer_size": 5981,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "WebDesign/javascript/site.js",
-			"settings":
-			{
-				"buffer_size": 469,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -198,6 +175,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"package contro: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -244,12 +229,52 @@
 	"expanded_folders":
 	[
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign",
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/css",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html",
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript"
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/images",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php"
 	],
 	"file_history":
 	[
+		"/c/users/justin/appdata/local/temp/hera sb(jus)-_0_58k/hera sb(jus) IMP_IMG.PRG",
+		"/c/users/justin/appdata/local/temp/hera sb(jus)-o_gt_o/hera sb(jus) SCANNING.PRG",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/QRapp.html",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/QRapp.php",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/default.php",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/HelloReact.html",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/React/savedDestinations.js",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/React/activeDestination.js",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/homepage.html",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/css/styles.css",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/default.php",
+		"/c/users/justin/appdata/local/temp/remote_subl-wzv_e7/[Antonucci Foods ] deploy.properties",
+		"/c/users/justin/appdata/local/temp/remote_subl-qwy9ng/[Antonucci Foods ] deploy.properties",
+		"/c/users/justin/appdata/local/temp/remote_subl-99jj67/[Antonucci Foods ] deploy.properties",
+		"/c/users/justin/appdata/local/temp/hera sb(jus)-vzvtp8/hera sb(jus) fpjava.jar",
+		"/c/users/justin/appdata/local/temp/remote_subl-jq27i8/[Capitol City Produce (test)] PDDEF.TXT",
+		"/c/users/justin/appdata/local/temp/remote_subl-5lukht/[Capitol City Produce (test)] PD310WBI.TXT",
+		"/c/users/justin/appdata/local/temp/hera sb(jus)-cgf_41/hera sb(jus) PDDEF.TXT",
+		"/c/users/justin/appdata/local/temp/remote_subl-ala_ow/[Capitol City Produce (test)] POSTPAY.PRG",
+		"/c/users/justin/appdata/local/temp/hera sb(jus)-f55g7y/hera sb(jus) PD310WBI.TXT",
+		"/c/users/justin/appdata/local/temp/hera sb(jus)-yp9y52/hera sb(jus) POSTPAY.PRG",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/React Components/savedTarget.js",
+		"/C/Users/Justin/Documents/Resume/JustinSeekeResume.html",
+		"/C/Users/Justin/Documents/Resume/Justin Seeke Resume.html",
+		"/c/users/justin/appdata/local/temp/remote_subl-kbdc9s/[Produce Pro Dev (Mars) ] PROCPROF.PRG",
+		"/c/users/justin/appdata/local/temp/remote_subl-t457ra/[Produce Pro Dev (Mars) ] PREIO.TXT",
+		"/c/users/justin/appdata/local/temp/remote_subl-24p8b3/[Katsiroubas ] W_003223.XML",
+		"/c/users/justin/appdata/local/temp/rsub-9gd_fo/hera sb(jus) BARLAB.PRG",
+		"/c/users/justin/appdata/local/temp/rsub-eo17kl/hera sb(jus) BARLAB.PRG",
+		"/c/users/justin/appdata/local/temp/rsub-j91aan/hera sb(jus) BARLAB.PRG",
+		"/c/users/justin/appdata/local/temp/rsub-tu7los/[Go Fresh Produce ] BARLAB.PRG",
+		"/c/users/justin/appdata/local/temp/rsub-4h6b42/[App Demo ] W_0158303.ISI",
+		"/c/users/justin/appdata/local/temp/rsub-54uu53/[Go Fresh Produce ] BARLAB.PRG",
+		"/c/users/justin/appdata/local/temp/hera sb(jus)-1dwts2/hera sb(jus) BARLAB.PRG",
+		"/c/users/justin/appdata/local/temp/remote_subl-cphxm9/[Freshline Produce ] BARLAB.PRG",
+		"/c/users/justin/appdata/local/temp/remote_subl-7qz3ea/[Freshline Produce ] BARLAB.PRG",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/site.js",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/css/fonts.css",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/fonts/fonts.css",
 		"/C/Users/Justin/Desktop/cny_compile",
 		"/c/users/justin/appdata/local/temp/remote_subl-b09zmq/[Bondi Produce Co. Ltd.] PROCIPL.PRG",
 		"/c/users/justin/appdata/local/temp/remote_subl-9igxzv/[Bondi Produce Co. Ltd.] WEBPROF.PRG",
@@ -338,7 +363,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -352,6 +377,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font",
+			"font-family",
+			"ctccji",
+			"heartland",
+			"heartland\\",
+			"heartland",
+			"pipw",
+			"border",
+			"JUS",
+			"MOVE 240 TO LZPLQRx",
+			"MOVE 8 TO LZPLQRy",
+			"MOVE 240 TO LZPLQRX",
+			"CASE MAMAMIA OR MARENGO OR MELISSA\n   MOVE 240 TO LZPLQRX    \n   MOVE 8 TO LZPLQRY\n   MOVE \"B\" TO LZPLQRLOC        \n   MOVE \"25\" TO LZPLQRFONT\n   MOVE \"Y\" TO LPRNTOPER",
+			"  CASE MAMAMIA OR MARENGO OR MELISSA\n       MOVE 240 TO LZPLQRX    \n       MOVE 8 TO LZPLQRY\n       MOVE \"B\" TO LZPLQRLOC        \n       MOVE \"25\" TO LZPLQRFONT\n       MOVE \"Y\" TO LPRNTOPER",
+			"      CASE MAMAMIA OR MARENGO OR MELISSA\n           MOVE 240 TO LZPLQRX    \n           MOVE 8 TO LZPLQRY\n           MOVE \"B\" TO LZPLQRLOC        \n           MOVE \"25\" TO LZPLQRFONT\n           MOVE \"Y\" TO LPRNTOPER",
+			"          CASE MAMAMIA OR MARENGO OR MELISSA\n               MOVE 240 TO LZPLQRX    \n               MOVE 8 TO LZPLQRY\n               MOVE \"B\" TO LZPLQRLOC        \n               MOVE \"25\" TO LZPLQRFONT\n               MOVE \"Y\" TO LPRNTOPER",
+			"melissa",
+			"navList",
+			"script",
+			"navList",
 			"#navlist li",
 			"font-size",
 			"carouselBannerContent",
@@ -410,103 +455,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "WebDesign/html/homepage.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								8200
-							]
-						],
-						"settings":
-						{
-							"spell_check": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "WebDesign/css/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5981,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								5981
-							]
-						],
-						"settings":
-						{
-							"spell_check": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4480.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "WebDesign/javascript/site.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								469
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -516,7 +466,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{
@@ -527,18 +477,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -586,7 +529,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -594,7 +537,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 200.0,
+	"side_bar_width": 232.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
