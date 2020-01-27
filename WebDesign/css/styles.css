@@ -1,5 +1,7 @@
 body {
 	background-color: #2a2a2a;
+	font-family: "cooper_hewittbook";
+	-webkit-overflow-scrolling: auto;
 }
 
 /* HEADER SECTION STYLING */
@@ -25,6 +27,17 @@ header {
 }
 
 #navList a {
+	color: #ccc;
+    transition: 0.5s;
+    width: 100px;
+    text-decoration: none;
+}
+
+#navList a:hover {
+	color: white;
+}
+
+#navList button {
 	background-color: transparent;
 	border: 0;
     color: #ccc;
@@ -143,6 +156,7 @@ header {
 	width: fit-content;
 	margin: auto;
 	color: white;
+	font-family: "cooper_hewittmedium";
 }
 
 #myStory .sectionHeading {
@@ -260,6 +274,11 @@ header {
 
 .projectSection {
 	padding-bottom: 8vh;
+}
+
+.projectSection a {
+	color: white;
+	text-decoration: none;
 }
 
 .projectSection h2 {
@@ -450,4 +469,77 @@ footer {
 	#slide3 {
 	    background-position-x: -450px;
 	}
+}
+
+
+/* QR CODE WEB APP STYLES  */
+#QRapp {
+	font-family: "Arial";
+}
+
+#QRtitleSection h1 {
+    width: fit-content;
+    margin: 60px auto 45px auto;
+    color: white;
+    font-size: 50pt;
+}
+
+#activeDestination img {
+	width: 200px;
+	margin: 20px auto;
+    display: block;
+}
+
+#activeDestination h2 {
+	color: white;
+	width: fit-content;
+	margin: auto;
+	font-size: 14px;
+}
+
+#destinationEntrySection h2, #savedDestinations h2{
+	color: white;
+	width: fit-content;
+	margin: auto;
+	margin-top: 50px;
+	font-size: 14pt;
+}
+
+.dataEntry {
+	width: fit-content;
+	margin: 10px auto;
+}
+
+#destinationEntrySection input, #destinationEntrySection button {
+	border-radius: 3px;
+    border: 3px solid white;
+}
+
+#savedDestinations table {
+	max-width: 800px;
+	margin: auto;
+}
+
+.savedDestination {
+	margin: 10px 0px;
+}
+
+.savedDestination td {
+	color: white;
+	margin: 10px 5px;
+}
+
+.savedDestination button {
+	height: 30px;
+	margin: 0px 5px;
+	border-radius: 3px;
+    border: 3px solid white;
+}
+
+.targetName {
+	width: 200px;
+}
+
+.targetURL {
+	width: 300px;
 }
