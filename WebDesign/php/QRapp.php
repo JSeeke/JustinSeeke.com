@@ -44,19 +44,19 @@ class QRapp {
 			    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
 				<!-- Custom CSS -->
+				<link rel="stylesheet" type="text/css" href="../css/fonts.css" media="all">
 				<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all">
 
 				<!-- Custom JavaScript -->
-				<!-- <script src="../javascript/site.js"></script> -->
 
 			</head>
 			<body>
 				<header>
 					<div id="navbar">
 						<ul id="navList">
-							<li><button onclick="location.href='../html/homepage.html#aboutMe';">About Me</li>
-							<li><button onclick="location.href='../html/homepage.html#myStory';">My Story</li>
-							<li><button onclick="location.href='../html/homepage.html#myProjects';">Projects</li>
+							<li><a href='../html/homepage.html#aboutMe'>About Me</a></li>
+							<li><a href='../html/homepage.html#myStory'>My Story</a></li>
+							<li><a href='../html/homepage.html#myProjects'>Projects</a></li>
 						</ul>
 					</div>
 				</header>
@@ -65,10 +65,12 @@ class QRapp {
 					<div id="QRtitleSection">
 						<h1>QR Code Web App</h1>
 						<div id="activeDestination">
-							<?php
-							echo '<a id="activeURL" href="' . $this->activeURL . '"><img src="../images/QRcode.png"></a>';
-							echo '<h2 id="activeName">Current Destination: ' . $this->activeName . '</h2>';
-							?>
+							<div>
+								<?php
+								echo '<a id="activeURL" href="' . $this->activeURL . '"><img src="../images/QRcode.png"></a>';
+								echo '<h2 id="activeName">Current Destination: ' . $this->activeName . '</h2>';
+								?>
+							</div>
 						</div>
 					</div>
 
