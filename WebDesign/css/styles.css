@@ -571,3 +571,25 @@ footer {
 .removeButton:hover {
 	color: red;
 }
+
+@media (max-width: 550px) {
+	#QRtitleSection h1 {
+		font-size: 30pt;
+	}
+
+	#newName {
+		width: 100px;
+	}
+
+	#savedDestinations * {
+		font-size: 14px
+	}
+
+	#savedDestinations .targetName {
+		text-align: ceneter;
+	}
+
+	#savedDestinations .targetURL {
+		display: none;
+	}
+}

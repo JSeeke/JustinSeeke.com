@@ -57,15 +57,12 @@ class QRapp {
 			    <meta charset="utf-8">
 			    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-			    <!-- JQuery -->
-    			<script src="../javascript/jquery-3.4.1.min.js"></script>
-
 				<!-- Custom CSS -->
 				<link rel="stylesheet" type="text/css" href="../css/fonts.css" media="all">
 				<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all">
 
 				<!-- Custom JavaScript -->
-				<script src="../javascript/site.js"></script>
+				<script src="../javascript/QRapp.js"></script>
 
 			</head>
 			<body>

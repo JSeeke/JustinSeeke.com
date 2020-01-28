@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
 				"jsonStrin",
 				"jsonStringSavedDestinations"
 			],
@@ -18,10 +22,6 @@
 			[
 				"saved",
 				"savedDestinations"
-			],
-			[
-				"font",
-				"font-family\tproperty"
 			],
 			[
 				"fon",
@@ -176,37 +176,10 @@
 	"buffers":
 	[
 		{
-			"file": "WebDesign/php/default.php",
+			"file": "WebDesign/css/styles.css",
 			"settings":
 			{
-				"buffer_size": 682,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "WebDesign/php/QRapp.php",
-			"settings":
-			{
-				"buffer_size": 4483,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "initialData.json",
-			"settings":
-			{
-				"buffer_size": 324,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "WebDesign/html/homepage.html",
-			"settings":
-			{
-				"buffer_size": 8666,
+				"buffer_size": 7972,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -215,7 +188,16 @@
 			"file": "WebDesign/javascript/site.js",
 			"settings":
 			{
-				"buffer_size": 1344,
+				"buffer_size": 915,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "WebDesign/php/QRapp.php",
+			"settings":
+			{
+				"buffer_size": 4402,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -286,21 +268,23 @@
 	"expanded_folders":
 	[
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/css",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php"
 	],
 	"file_history":
 	[
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/initialData.json",
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/css/styles.css",
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/homepage.html",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/QRapp.php",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/site.js",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/QRapp.js",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/homepage.html",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/initialData.json",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/default.php",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/css/styles.css",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/css/fonts.css",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/JustinSeeke.sublime-workspace",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/QRapp.html",
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/QRapp.php",
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/default.php",
 		"/c/users/justin/appdata/local/temp/hera sb(jus)-yow63d/hera sb(jus) PROCIPL.PRG",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/HelloReact.html",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/images/aboutMePic.jpg",
@@ -418,12 +402,11 @@
 		"/C/Users/Justin/Documents/ECE 404/hw2_starter.py",
 		"/C/Users/Justin/Documents/ECE 404/DES.py",
 		"/C/Users/Justin/Documents/ECE 404/Lecture3Code.tar.gz",
-		"/D/Documents/ECE 404/DES.py",
-		"/D/Documents/ECE 404/hw1/cryptBreak.py"
+		"/D/Documents/ECE 404/DES.py"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -523,41 +506,11 @@
 			[
 				{
 					"buffer": 0,
-					"file": "WebDesign/php/default.php",
+					"file": "WebDesign/css/styles.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								682,
-								682
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "WebDesign/php/QRapp.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4483,
+						"buffer_size": 7972,
 						"regions":
 						{
 						},
@@ -565,12 +518,43 @@
 						[
 							[
 								0,
-								4483
+								7972
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7665.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "WebDesign/javascript/site.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								915,
+								915
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -581,98 +565,30 @@
 				},
 				{
 					"buffer": 2,
-					"file": "initialData.json",
+					"file": "WebDesign/php/QRapp.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 324,
+						"buffer_size": 4402,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								26
+								0,
+								4402
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 462.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "WebDesign/html/homepage.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8666,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								336,
-								259
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "WebDesign/javascript/site.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1344,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								748,
-								748
-							]
-						],
-						"settings":
-						{
-							"spell_check": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -695,18 +611,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
