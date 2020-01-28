@@ -18,6 +18,7 @@
             $QRapp->delete($_GET["index"]);
         }
         $QRapp->render();
+        flush();
         
     } else {
         header("Location: html/homepage.html");

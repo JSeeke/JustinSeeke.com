@@ -6,7 +6,35 @@ class QRapp {
         public $savedDestinations = [];
         
         function __construct() {
-            $jsonString = file_get_contents('./data/QRappdata.json', true);
+            $this->updateData();
+        }
+        
+        public function set($index) {
+            $this->activeIndex = $index;
+            $this->acitveName = $this->savedDestinations[$index]->name;
+            $this->activeURL = $this->savedDestinations[$index]->URL;
+            $this->writeAppData();
+        }
+        
+        public function add($name, $URL) {
+            $newDestination = json_decode('{"name":"' . $name . '","URL":"' . $URL . '"}');
+			array_push($this->savedDestinations, $newDestination);
+            $this->writeAppData();
+        }
+        
+        public function delete($index) {
+        	array_splice($this->savedDestinations, $index, 1);
+            $this->writeAppData();
+        }
+
+        private function writeAppData() {
+        	$jsonStringSavedDestinations = json_encode($this->savedDestinations);
+        	$jsonStringAppData = '{"activeDestination":' . $this->activeIndex . ',"savedDestinations":' . $jsonStringSavedDestinations . '}';
+		    file_put_contents('./data/QRappdata.json', stripcslashes($jsonStringAppData));
+        }
+
+        private function updateData(){
+        	$jsonString = file_get_contents('./data/QRappdata.json', true);
             if ($jsonString == false) {
                 die("Unable to open qr active target!");
             }
@@ -16,20 +44,9 @@ class QRapp {
 	        $this->activeURL = strval($appData->{'savedDestinations'}[$this->activeIndex]->{'URL'});
 	        $this->savedDestinations = $appData->{'savedDestinations'};
         }
-        
-        public function set() {
-            
-        }
-        
-        public function add() {
-            
-        }
-        
-        public function delete() {
-            
-        }
 
         public function render() {
+        	$this->updateData();
             ?>
             <!doctype html>
 			<html lang="en">
@@ -40,14 +57,15 @@ class QRapp {
 			    <meta charset="utf-8">
 			    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-			    <!-- Bootstrap CSS -->
-			    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+			    <!-- JQuery -->
+    			<script src="../javascript/jquery-3.4.1.min.js"></script>
 
 				<!-- Custom CSS -->
 				<link rel="stylesheet" type="text/css" href="../css/fonts.css" media="all">
 				<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all">
 
 				<!-- Custom JavaScript -->
+				<script src="../javascript/site.js"></script>
 
 			</head>
 			<body>
@@ -67,7 +85,7 @@ class QRapp {
 						<div id="activeDestination">
 							<div>
 								<?php
-								echo '<a id="activeURL" href="' . $this->activeURL . '"><img src="../images/QRcode.png"></a>';
+								echo '<a id="activeURL" href="' . $this->activeURL . '"><img src="../images/dynamicQRcode.png"></a>';
 								echo '<h2 id="activeName">Current Destination: ' . $this->activeName . '</h2>';
 								?>
 							</div>
@@ -80,7 +98,7 @@ class QRapp {
 						<div class="dataEntry">
 							<input id="newName" value="Name">
 							<input id="newURL" value="URL">
-							<button>Add</button>
+							<button onclick="sendAddRequest();">Add</button>
 						</div>
 					</div>
 
@@ -94,8 +112,8 @@ class QRapp {
     							echo '<tr class="savedDestination">';
     							echo '<td class="targetName">' . $currentDestination->{'name'} . '</td>';
     							echo '<td class="targetURL">' . $currentDestination->{'URL'} . '</td>';
-    							echo '<td><button class="setActiveButton">Set Active</button></td>';
-    							echo '<td><button class="removeButton">Remove</button></td>';
+    							echo '<td><button class="setActiveButton" onclick="sendSetRequest(' . $i . ')">Set Active</button></td>';
+    							echo '<td><button class="removeButton" onclick="sendDeleteRequest(' . $i . ')">Remove</button></td>';
     							echo '</tr>';
 						    }
 							?>

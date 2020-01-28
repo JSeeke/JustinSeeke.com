@@ -1,0 +1,16 @@
+{
+  "activeDestination": 0,
+  "savedDestinations": [{
+      "name": "My Website",
+      "URL": "https://www.justinseeke.com"
+    },
+    {
+      "name": "LinkedIn",
+      "URL": "https://www.linkedin.com/in/justinseeke"
+    },
+    {
+      "name": "Test",
+      "URL": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }
+  ]
+}
