@@ -17,6 +17,16 @@ header {
 	display: flex;
 }
 
+#home {
+	color: white;
+    top: 6px;
+    left: 100px;
+    position: absolute;
+    font-size: 25px;
+    font-family: 'cooper_hewittsemibold';
+    text-decoration: none;
+}
+
 #navbar {
 	width: fit-content;
 	margin: auto;

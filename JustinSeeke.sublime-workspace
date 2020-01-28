@@ -179,16 +179,24 @@
 			"file": "WebDesign/css/styles.css",
 			"settings":
 			{
-				"buffer_size": 7972,
+				"buffer_size": 8143,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "WebDesign/javascript/site.js",
+			"file": "WebDesign/css/fonts.css",
 			"settings":
 			{
-				"buffer_size": 915,
+				"buffer_size": 1522,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "WebDesign/html/homepage.html",
+			"settings":
+			{
+				"buffer_size": 8724,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -197,7 +205,7 @@
 			"file": "WebDesign/php/QRapp.php",
 			"settings":
 			{
-				"buffer_size": 4402,
+				"buffer_size": 4454,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -275,8 +283,8 @@
 	],
 	"file_history":
 	[
-		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/QRapp.php",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/site.js",
+		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/php/QRapp.php",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/javascript/QRapp.js",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/WebDesign/html/homepage.html",
 		"/C/Users/Justin/Documents/GitHub/JustinSeeke.com/initialData.json",
@@ -501,7 +509,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -510,51 +518,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7972,
+						"buffer_size": 8143,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								7972
+								438,
+								411
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7665.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "WebDesign/javascript/site.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 915,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								915,
-								915
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -564,20 +542,79 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "WebDesign/php/QRapp.php",
+					"buffer": 1,
+					"file": "WebDesign/css/fonts.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4402,
+						"buffer_size": 1522,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								4402
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "WebDesign/html/homepage.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1402,
+								1402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "WebDesign/php/QRapp.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1277,
+								1277
 							]
 						],
 						"settings":
@@ -585,7 +622,7 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 462.0,
+						"translation.y": 196.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

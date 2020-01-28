@@ -67,6 +67,7 @@ class QRapp {
 			</head>
 			<body>
 				<header>
+					<a id="home" href="www.justinseeke.com">JS</a>
 					<div id="navbar">
 						<ul id="navList">
 							<li><a href='../html/homepage.html#aboutMe'>About Me</a></li>
