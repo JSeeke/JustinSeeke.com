@@ -67,7 +67,7 @@ class QRapp {
 			</head>
 			<body>
 				<header>
-					<a id="home" href="www.justinseeke.com">JS</a>
+					<a id="home" href="https://www.justinseeke.com">JS</a>
 					<div id="navbar">
 						<ul id="navList">
 							<li><a href='../html/homepage.html#aboutMe'>About Me</a></li>
@@ -82,8 +82,8 @@ class QRapp {
 						<h1>QR Code Web App</h1>
 						<div id="activeDestination">
 							<div>
+								<a id="activeURL" href="https://www.justinseeke.com?qr"><img src="../images/dynamicQRcode.png"></a>';
 								<?php
-								echo '<a id="activeURL" href="' . $this->activeURL . '"><img src="../images/dynamicQRcode.png"></a>';
 								echo '<h2 id="activeName">Current Destination: ' . $this->activeName . '</h2>';
 								?>
 							</div>
