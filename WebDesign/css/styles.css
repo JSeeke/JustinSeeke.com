@@ -19,9 +19,8 @@ header {
 
 #home {
 	color: white;
-    top: 6px;
     left: 100px;
-    position: absolute;
+    position: relative;
     font-size: 25px;
     font-family: 'cooper_hewittsemibold';
     text-decoration: none;
@@ -70,7 +69,7 @@ header {
 }
 
 #navList li {
-	margin: 0px 50px;
+	margin: 0px 40px;
 }
 
 /* CONTENT SECTION STYLING */
@@ -387,15 +386,18 @@ footer {
 	}
 }
 
-@media (max-width: 850px) {
-	#navList li {
-		margin: 0px 5px;
-	}
-}
-
 @media (max-width: 550px) {
 	body {
 		font-size: medium;
+	}
+
+	#home{
+		font-size: 16px;
+		left: 20px;
+	}
+
+	#navList li {
+		margin: 0px 15px;
 	}
 
 	.coverImgNarrow {
