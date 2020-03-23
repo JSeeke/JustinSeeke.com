@@ -19,8 +19,9 @@ header {
 
 #home {
 	color: white;
-    left: 100px;
-    position: relative;
+    left: 5vw;
+    top: 0.5vh;
+    position: absolute;
     font-size: 25px;
     font-family: 'cooper_hewittsemibold';
     text-decoration: none;
@@ -393,7 +394,8 @@ footer {
 
 	#home{
 		font-size: 16px;
-		left: 20px;
+	    left: 5vw;
+	    top: 1vh;
 	}
 
 	#navList li {
