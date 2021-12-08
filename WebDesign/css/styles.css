@@ -21,12 +21,14 @@ header {
 #home {
 	color: white;
     left: 5vw;
-    top: 0.5vh;
+    top: 15px;
     position: absolute;
     font-size: 25px;
     font-family: 'cooper_hewittsemibold';
     text-decoration: none;
 }
+
+
 
 #navbar {
 	width: fit-content;
@@ -86,27 +88,14 @@ header {
 	height: 80vh;
 }
 
-/* normal sized cover photo */
-.coverImgNarrow {
-	display: none;
-}
-
 .coverImg {
-	display: none;
-}
-
-.coverImgWide {
-    display: none;
-}
-
-.coverImgVeryWide {
 	object-fit: cover;
-    object-position: center;
-    margin: auto;
+	object-position: center;
+	margin: auto;
 	width: 100%;
 	height: 80vh;
-    display: block;
-    position: fixed;
+	display: block;
+	position: fixed;
 }
 
 #greetingSection {
@@ -143,7 +132,7 @@ header {
 }
 
 .aboutMeContent .bio p {
-	max-height: : 30vh;
+	max-height: 30vh;
 	padding: 5px 0px;
 }
 
@@ -336,57 +325,6 @@ footer {
 }
 
 /* mobile screens */
-@media (max-width: 1400px) {
-	.coverImgNarrow {
-		display: none;
-	}
-
-	.coverImg {
-	    display: none;
-	}
-	
-	.coverImgWide {
-	    object-fit: cover;
-	    object-position: center;
-	    margin: auto;
-		width: 100%;
-		height: 80vh;
-	    display: block;
-	    position: fixed;
-	}
-	
-	.coverImgVeryWide {
-    	display: none;
-	}
-}
-
-@media (max-width: 1045px) {
-	.coverImgNarrow {
-		display: none;
-	}
-
-	.coverImg {
-	   	object-fit: cover;
-	    object-position: center;
-	    margin: auto;
-		width: 100%;
-		height: 80vh;
-	    display: block;
-	    position: fixed;
-	}
-	
-	.coverImgWide {
-		display: none;
-	}
-	
-	.coverImgVeryWide {
-    	display: none;
-	}
-
-	.carousel-item {
-		background-size: contain;
-	}
-}
 
 @media (max-width: 550px) {
 	body {
@@ -396,33 +334,11 @@ footer {
 	#home{
 		font-size: 16px;
 	    left: 5vw;
-	    top: 1vh;
+	    top: 10px;
 	}
 
 	#navList li {
 		margin: 0px 15px;
-	}
-
-	.coverImgNarrow {
-	    object-fit: cover;
-	    object-position: center;
-	    margin: auto;
-		width: 100%;
-		height: 80vh;
-	    display: block;
-	    position: fixed;
-	}
-
-	.coverImg {
-	    display: none;
-	}
-	
-	.coverImgWide {
-	    display: none;
-	}
-	
-	.coverImgVeryWide {
-    	display: none;
 	}
 
 	#greetingSection h1 {

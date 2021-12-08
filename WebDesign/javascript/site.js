@@ -1,5 +1,5 @@
 // Smooth scrolling for only header links
-var smoothScrollTargets = ["#aboutMe", "#myStory", "#myProjects"];
+var smoothScrollTargets = ["#body", "#aboutMe", "#myStory", "#myProjects"];
 
 $(document).ready(function(){
   // Add smooth scrolling to all links

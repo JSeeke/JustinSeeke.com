@@ -27,11 +27,11 @@
 
 	<title>Justin Seeke</title>
 </head>
-<body>
+<body id="body">
 	<!--  HEADER START  -->
 	<header>
 		<div id="navbar">
-			<a id="home" href="https://www.justinseeke.com">JS</a>
+			<a id="home" href="#body">JS</a>
 			<ul id="navList">
 				<!-- maybe lock these in place to fix safari overscrolling -->
 				<li><a href=#aboutMe>About Me</a></li>
@@ -42,10 +42,27 @@
 	</header>
 
 	<div class="coverSection">
-		<img class="coverImgNarrow" src="../images/coverPhotoNarrow.jpg">
-		<img class="coverImg" src="../images/coverPhoto.jpg">
-		<img class="coverImgWide" src="../images/coverPhotoWide.jpg">
-		<img class="coverImgVeryWide" src="../images/coverPhotoVeryWide.png">
+		<img id="coverImg" class="coverImg" src="">
+		<script>
+			function reportWindowSize() {
+				var coverImg = document.getElementById("coverImg");
+
+				if (window.innerWidth < 550) {
+					coverImg.src = "../images/coverPhotoNarrow.jpg"
+				} else if (window.innerWidth < 1300) {
+					coverImg.src = "../images/coverPhoto.jpg"
+				} else if (window.innerWidth < 2100) {
+					coverImg.src = "../images/coverPhotoWide.jpg"
+				} else {
+					coverImg.src = "../images/coverPhotoVeryWide.jpg";
+				}
+			}
+
+			$(document).ready(function() {
+				reportWindowSize();
+			})
+			window.addEventListener('resize', reportWindowSize);
+		</script>
 	</div>
 		
 	<!--  CONENT START -->
