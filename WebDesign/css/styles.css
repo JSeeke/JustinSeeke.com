@@ -10,7 +10,7 @@ button:focus {
 
 /* HEADER SECTION STYLING */
 header {
-	height: 5vh;
+	height: 60px;
 	background-color: #2a2a2a;
 	position: sticky;
 	top: 0px;
@@ -27,8 +27,6 @@ header {
     font-family: 'cooper_hewittsemibold';
     text-decoration: none;
 }
-
-
 
 #navbar {
 	width: fit-content;
@@ -113,7 +111,7 @@ header {
 }
 
 #aboutMe {
-	background-color: #242424;
+	background-color: #222222;
 	width: 100%;
 	margin: auto;
 	height: 100vh;
@@ -121,14 +119,17 @@ header {
 }
 
 .aboutMeContent {
-	display: grid;
-	width: 100%;
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    padding-top: 5%;
 }
 
 .aboutMeContent .bio {
 	width: 100%;
 	margin: auto;
-    padding-top: 5vh;
+	margin-left: 30px;
 }
 
 .aboutMeContent .bio p {
@@ -137,20 +138,21 @@ header {
 }
 
 .aboutMeContent img {
-	margin: auto;
-	height: 30vh;
+    margin: auto;
+    height: 350px;
     object-fit: contain;
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
 }
 
 .sectionHeading {
 	display: flex;
 	height: 20vh;
+	padding-top: 60px;
 }
 
 .sectionHeading-dark {
 	background-color: #222222;
 	width: 100%;
-	max-width: 1000px;
 	margin: auto;
 	height: 100%;
 	display: flex;
@@ -163,16 +165,16 @@ header {
 	font-family: "cooper_hewittmedium";
 }
 
-#myStory .sectionHeading {
-	height: 14vh;
-}
-
 .sectionContent {
 	height: 80vh;
 	width: 100%;
-	max-width: 1000px;
 	margin: auto;
 	color: white;
+}
+
+#aboutMe .sectionContent {
+	max-width: unset;
+	background-color: #222222;
 }
 
 .sectionContent p {
@@ -189,8 +191,12 @@ header {
 
 /* MY STORY CAROUSEL */
 #myStory {
-    background-color: #2a2a2a;
+    background-color: #1e1e1e;
     height: 100vh;
+}
+
+#myStoryCarousel {
+	height: calc(80vh - 60px);
 }
 
 #carouselTitle {
@@ -217,11 +223,11 @@ header {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-	background-color: #282828;
+	background-color: #1e1e1e;
 }
 
 .carousel-item .carouselBanner {
-	background-color: rgba(42, 42, 42, 0.5);
+	background-color: rgba(30, 30, 30, 0.5);
 	height: 100%;
 	display: flex;
 }
@@ -229,7 +235,7 @@ header {
 .carousel-item .carouselBannerContent {
 	width: 60%;
 	margin: auto;
-    margin-bottom: 5vh;
+    margin-top: 35vh;
 }
 
 .carousel-item .carouselBannerContent p {
@@ -245,7 +251,11 @@ header {
 	padding-bottom: 9px;
 }
 
-#slide1 {
+#slide4 {
+	background-image: url("../images/NorthwesternSPS.jpg");
+}
+
+#slide3 {
 	background-image: url("../images/ProducePro.jpg");
 }
 
@@ -253,17 +263,16 @@ header {
 	background-image: url("../images/Purdue.jpg");
 }
 
-#slide3 {
+#slide1 {
 	background-image: url("../images/Cedarburg.jpg"); 
 }
 
 .myStoryFooter {
-	height: 6vh;
-    background-color: #2a2a2a;
+	height: 60px;
 }
 
 #myProjects {
-	background-color: #242424;
+	background-color: #222222;
 }
 
 #myProjects .sectionContent {
@@ -327,6 +336,10 @@ footer {
 /* mobile screens */
 
 @media (max-width: 550px) {
+	header {
+		height: 40px;
+	}
+
 	body {
 		font-size: medium;
 	}
@@ -349,8 +362,24 @@ footer {
 		width: 80%;
 	}
 
+	.aboutMeContent {
+		flex-direction: column;
+		padding-top: 0px;
+	}
+
+	.aboutMeContent img {
+		height: 200px;
+	}
+
 	.aboutMeContent .bio {
 		width: 100%;
+		font-size: 12px;
+		margin-top: 20px;
+		margin-left: unset;
+	}
+
+	.aboutMeContent .bio p:first-child {
+		text-align: center;
 	}
 
 	.carousel-item {
@@ -361,6 +390,7 @@ footer {
 	    width: 75%;
 	    line-height: normal;
 	    font-size: 11pt;
+		margin-top: 16vh;
 	}
 
 	.carousel-control-prev-icon {
@@ -371,12 +401,8 @@ footer {
 		margin-left: 5px;
 	}
 
-	#slide1 {
-    	background-position-x: -100px;
-	}
-
 	#slide3 {
-	    background-position-x: -388px;
+    	background-position-x: -100px;
 	}
 }
 
@@ -397,12 +423,8 @@ footer {
 		background-size: cover;
 	}
 
-	#slide1 {
-    	background-position-x: -100px;
-	}
-
 	#slide3 {
-	    background-position-x: -450px;
+    	background-position-x: -100px;
 	}
 }
 
@@ -503,6 +525,7 @@ footer {
 	color: red;
 }
 
+/* QR app mobile screen styles */
 @media (max-width: 550px) {
 	#QRtitleSection h1 {
 		font-size: 30pt;

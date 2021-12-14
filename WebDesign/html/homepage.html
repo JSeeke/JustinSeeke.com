@@ -44,24 +44,25 @@
 	<div class="coverSection">
 		<img id="coverImg" class="coverImg" src="">
 		<script>
-			function reportWindowSize() {
+			function loadCoverPhoto() {
 				var coverImg = document.getElementById("coverImg");
-
-				if (window.innerWidth < 550) {
-					coverImg.src = "../images/coverPhotoNarrow.jpg"
-				} else if (window.innerWidth < 1300) {
-					coverImg.src = "../images/coverPhoto.jpg"
-				} else if (window.innerWidth < 2100) {
-					coverImg.src = "../images/coverPhotoWide.jpg"
-				} else {
+				var aspectRatio = window.innerWidth / window.innerHeight;
+				console.log("aspectRatio="+aspectRatio);
+				if (aspectRatio > 1.6) {
 					coverImg.src = "../images/coverPhotoVeryWide.jpg";
+				} else if (aspectRatio > 1.0) {
+					coverImg.src = "../images/coverPhotoWide.jpg";
+				} else if (aspectRatio > 0.54) {
+					coverImg.src = "../images/coverPhoto.jpg"
+				} else {
+					coverImg.src = "../images/coverPhotoNarrow.jpg";
 				}
 			}
 
 			$(document).ready(function() {
-				reportWindowSize();
+				loadCoverPhoto();
 			})
-			window.addEventListener('resize', reportWindowSize);
+			window.addEventListener('resize', loadCoverPhoto);
 		</script>
 	</div>
 		
@@ -78,11 +79,23 @@
 					<h1>About Me</h1>
 				</div>
 			</div>
-			<div class="sectionContent" style="background-color: #222222;">
+			<div class="sectionContent">
 				<div class="aboutMeContent">
 					<img src="../images/aboutMePic.jpg">
 					<div class="bio">
-						<p>Welcome to my website! I am a software developer for Produce Pro Software in the Chicago area. Recently, I’ve become proficient with web development through my professional work. I have a strong background in low level technologies from my Computer Engineering studies at Purdue. I have started pursuing personal technical projects, my first being this website.</p>
+						<p>Welcome to my website!</p>
+						<p>
+							I am a software developer in the Chicago area, and I am also currently working towards my Master’s degree in Health Analytics 
+							at Northwestern University. Ever since my undergraduate studies in computer engineering at Purdue University, I’ve had an 
+							interest in creating software solutions to improve quality of life for others. Because of this, working in the healthcare 
+							industry has always been appealing to me, but it wasn’t until August of 2020 did I start working to pivot my career towards 
+							healthcare data management and analytics.
+						</p>
+						<p>
+							Alongside my professional interests, I am passionate about prioritizing my relationships with friends & family and promoting 
+							personal health. I believe in the importance of achieving a good work life balance to live a fulfilling life. Below, I’ve 
+							written about some of the different chapters in my life, and how they’ve impacted me and helped me grow as a person.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -98,13 +111,36 @@
 			    <li data-target="#myStoryCarousel" data-slide-to="0" class="active"></li>
 			    <li data-target="#myStoryCarousel" data-slide-to="1"></li>
 			    <li data-target="#myStoryCarousel" data-slide-to="2"></li>
+			    <li data-target="#myStoryCarousel" data-slide-to="3"></li>
 			  </ol>
 			  <div class="carousel-inner">
-				<div id="slide1" class="carousel-item active">
+				<div id="slide4" class="carousel-item active">
+					<div class="carouselBanner">
+						<div class="carouselBannerContent">
+			  				<h2>Northwestern</h2>
+			  				<p>
+								When I was deciding on pursuing a master’s degree, I was initially interested in Northwestern’s Data Science 
+								program, but then I learned of their more specialized Health Analytics program. The Health Analytics program 
+								is essentially a data science curriculum that has been tailored to address the nuanced challenges of the 
+								healthcare industry. I’ve always been interested in a career on the technical side of healthcare, so I decided 
+								that the Health Analytics programs would be a better fit for me. Within my first year, I’ve gained a fundamental 
+								understanding of data analytics and management techniques as well as challenges facing our healthcare system. 
+								I am looking forward to learning more advanced concepts as I continue through this program.
+							</p>
+			  			</div>
+	  				</div>
+				</div>
+				<div id="slide3" class="carousel-item">
 					<div class="carouselBanner">
 						<div class="carouselBannerContent">
 			  				<h2>Produce Pro</h2>
-			  				<p>I started working at Produce Pro in July, 2018. This company has given me a great opportunity to get my feet wet in the world of web design. I had no prior web design experience,  but I was eager to learn. During my time at Produce Pro, I have worked on many projects ranging from backend request/response logic to web front end UI design. Produce Pro is a small company of welcoming programmers that write software to assist produce distributors. My experience here helped expose me to new technologies with more to come.</p>
+			  				<p>
+								Produce Pro is a medium sized company of kind hearted programmers that write software to help automate produce 
+								distributors’ business functions. I started working at Produce Pro in  2018, and during my time at Produce Pro, 
+								I have worked on many projects including API design and integrations, web front end development, and React web 
+								application development. This company has given me great opportunities to learn new web technologies, grow as 
+								a developer, and to further my education.
+							</p>
 			  			</div>
 	  				</div>
 				</div>
@@ -112,15 +148,27 @@
 					<div class="carouselBanner">
 						<div class="carouselBannerContent">
 			  				<h2>Purdue</h2>
-			  				<p>My experience at Purdue was a mixed bag of grueling coursework and personal growth. Purdue’s first year engineering program helped my find the direction I was looking for. It was at this school that I fell in love with computing technology, and a better group of friends than I ever could have hoped for. I’m grateful for the challenges in my coursework that taught me how to find answers to difficult problems. Whenever I think back to the lessons I learned at this school, I am truly amazed by how much I grew, at Purdue.</p>
+			  				<p>
+								My experience at Purdue was a mixed bag of grueling coursework and personal growth. Purdue’s first year engineering 
+								program helped my find the direction I was looking for. It was at this school that I fell in love with computing 
+								technology, and a better group of friends than I ever could have hoped for. I’m grateful for the challenges in 
+								my coursework that taught me how to find answers to difficult problems. Whenever I think back to the lessons I 
+								learned at this school, I am truly amazed by how much I grew, at Purdue.
+							</p>
 			  			</div>
 	  				</div>
 	    		</div>
-	    		<div id="slide3" class="carousel-item">
+	    		<div id="slide1" class="carousel-item">
 					<div class="carouselBanner">
 						<div class="carouselBannerContent">
 			  				<h2>Cedarburg</h2>
-			  				<p>Getting to know how someone grew up is a good way to get to know how someone sees themselves in the world. For me, my introduction to the world was in Cedarburg, Wisconsin. A town too big for everyone to know each other,  but small and excluded enough to have an intimacy about it. Growing up in Cedarburg gave me a grounded yet sheltered view of the world.The most important lesson I  learned during this time in my life was to never shy away from mistakes, but to seek out the reasons behind them. I’m lucky to call Cedarburg my hometown.</p>
+			  				<p>
+								Getting to know how someone grew up is a good way to get to know how someone sees themselves in the world. For me, 
+								my introduction to the world was in Cedarburg, Wisconsin. A town too big for everyone to know each other,  but 
+								small and excluded enough to have an intimacy about it. Growing up in Cedarburg gave me a grounded yet sheltered 
+								view of the world.The most important lesson I  learned during this time in my life was to never shy away from 
+								mistakes, but to seek out the reasons behind them. I’m lucky to call Cedarburg my hometown.
+							</p>
 			  			</div>
 		  			</div>
 			    </div>
@@ -148,12 +196,24 @@
 				<ul class="projectList">
 					<li class="projectSection">
 					  	<h2>JustinSeeke.com</h2>
-						<p>The idea of having a personal website was always appealing to me. This project was the first time that I had taken the time to work on a project on my own. I decided to build this website to apply the web development skills that I learned through my work to a personal project. All of the styling for this website was written and designed by me. </p>
+						<p>
+							The idea of having a personal website was always appealing to me. This project was the first time that I had 
+							taken the time to work on a project on my own. I decided to build this website to apply the web development 
+							skills that I learned through my work to a personal project. All of the styling for this website was written 
+							and designed by me.
+						</p>
 					</li>
 					<li class="projectSection">
 						<a href="../?QRapp">
 							<h2>Dynamic QR Code Web app</h2>
-							<p>I was looking into generating a QR code for my website, when I stumbled across dynamic QR code technology. The idea was to have a QR code that contains a static redirect URL. This URL can then be programmed to redirect traffic to a different destination. This has been my first real exposure to ground up web application design with custom content delivery infrastructure. The most exciting part of this project was designing and organizing the request logic for altering the backend state of the application. This project helped me to learn the basics of web development and content delivery.</p>
+							<p>
+								I was looking into generating a QR code for my website, when I stumbled across dynamic QR code technology. 
+								The idea was to have a QR code that contains a static redirect URL. This URL can then be programmed to 
+								redirect traffic to a different destination. This has been my first real exposure to ground up web application 
+								design with custom content delivery infrastructure. The most exciting part of this project was designing 
+								and organizing the request logic for altering the backend state of the application. This project helped me 
+								to learn the basics of web development and content delivery.
+							</p>
 						</a>
 					<li>
 				</ul>
