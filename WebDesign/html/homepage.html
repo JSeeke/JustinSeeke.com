@@ -46,8 +46,8 @@
 		<script>
 			function loadCoverPhoto() {
 				var coverImg = document.getElementById("coverImg");
+				
 				var aspectRatio = window.innerWidth / window.innerHeight;
-				console.log("aspectRatio="+aspectRatio);
 				if (aspectRatio > 1.6) {
 					coverImg.src = "../images/coverPhotoVeryWide.jpg";
 				} else if (aspectRatio > 1.0) {
